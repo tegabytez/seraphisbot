@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seraphis Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+</head>
+<body class="bg-gray-900 text-white font-Manrope">
+
+  <header class="bg-gray-800 text-white shadow-lg fixed w-full z-50">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+          <a href="/" class="text-2xl font-bold">Seraphis</a>
+          <nav class="space-x-6">
+              <a href="/commands.html">Commands</a>
+              <a href="/team.html">Team</a>
+              <a href="/store.html">Store</a>
+              <a href="/changelog.html">Changelog</a>
+              <a href="/rules.html">Rules</a>
+          </nav>
+      </div>
+  </header>
+
+  <!-- Team Section -->
+  <section class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-5xl font-bold mb-12 text-purple-400">Meet the Team</h2>
+
+      <!-- Bot Admin Section -->
+      <h3 class="text-4xl font-bold mb-6 text-indigo-400">Seraphis Team - Developers</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div class="team-card bg-gray-800 p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-105 hover:bg-gray-700">
+          <img src="https://cdn.discordapp.com/avatars/1281575904564477964/e30e5d7518933efb86cd54b40951eb39.png?size=2048" alt="Team Member 1" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-purple-400">
+          <h3 class="text-2xl font-bold mb-2">tegabytez</h3>
+          <p class="text-sm text-purple-300 mb-4">Founder ~ Lead Developer</p>
+          <p class="text-blue-400">Tega oversees the entire development of Seraphis, ensuring every feature works flawlessly.</p>
+          <p class="text-grey-400">Ima dynosourseusrexoumus 🐱‍🐉🐱‍🐉</p>
+          <div class="absolute top-4 right-4 text-purple-500 text-3xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+            <i class="fa-solid fa-code"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community Manager Section -->
+      <h3 class="text-4xl font-bold mb-6 text-indigo-400">Community Manager</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div class="team-card bg-gray-800 p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-105 hover:bg-gray-700">
+          <img src="https://cdn.discordapp.com/avatars/1281575904564477964/e30e5d7518933efb86cd54b40951eb39.png?size=2048" alt="Team Member 2" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-purple-400">
+          <h3 class="text-2xl font-bold mb-2">tegabytez</h3>
+          <p class="text-sm text-purple-300 mb-4">Community Manager</p>
+          <p class="text-blue-400">Tega keeps the Seraphis community engaged, safe, and informed about all the latest updates. (Because he's <dvf)</p>
+          <p class="text-grey-400">keep kool, k im hot</p>
+          <div class="absolute top-4 right-4 text-purple-500 text-3xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+            <i class="fa-solid fa-users"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Developer Section -->
+      <h3 class="text-4xl font-bold mb-6 text-indigo-400">Web Developer</h3>
+      <h4 class="text-3xl font-bold mb-4 text-teal-400">Frontend & Backend</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div class="team-card bg-gray-800 p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-105 hover:bg-gray-700">
+          <img src="https://cdn.discordapp.com/avatars/1281575904564477964/e30e5d7518933efb86cd54b40951eb39.png?size=2048" alt="Team Member 3" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-purple-400">
+          <h3 class="text-2xl font-bold mb-2">tegabytez</h3>
+          <p class="text-sm text-purple-300 mb-4">UI/UX Designer</p>
+          <p class="text-blue-400">Tega makes sure Seraphis looks as good as it performs, crafting both design and user interface.</p>
+          <p class="text-grey-400">Why am I so cool and work EVERY FRICKIN JOB [Ian even make this website]</p>
+          <div class="absolute top-4 right-4 text-purple-500 text-3xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web & Bot Artist Section -->
+      <h3 class="text-4xl font-bold mb-6 text-indigo-400">Web & Bot Artist</h3>
+      <h4 class="text-3xl font-bold mb-4 text-teal-400">Mainly Pixel Art</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div class="team-card bg-gray-800 p-6 rounded-lg shadow-lg relative transition duration-300 hover:scale-105 hover:bg-gray-700">
+          <img src="https://cdn.discordapp.com/avatars/1281575904564477964/e30e5d7518933efb86cd54b40951eb39.png?size=2048" alt="Team Member 4" class="w-32 h-32 mx-auto rounded-full mb-4 border-4 border-purple-400">
+          <h3 class="text-2xl font-bold mb-2">tegabytez</h3>
+          <p class="text-sm text-purple-300 mb-4">Pixel Artist, General Art</p>
+          <p class="text-blue-400">[ART] ON HOLD!</p>
+          <p class="text-grey-400">Ima bad artisrtrtrstt 🎨🖌🖌🖌🖌</p>
+          <div class="absolute top-4 right-4 text-purple-500 text-3xl opacity-0 transition-opacity duration-300 hover:opacity-100">
+            <i class="fa-solid fa-paint-brush"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- About Section -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">About Seraphis</h3>
+        <p class="text-sm">
+          Seraphis Bot makes server management effortless with buttons, modals, and slash commands. Enjoy seamless moderation and utility features that save time.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/commands.html" class="hover:text-indigo-400 transition">Commands</a></li>
+          <li><a href="/team.html" class="hover:text-indigo-400 transition">Team</a></li>
+          <li><a href="/store.html" class="hover:text-indigo-400 transition">Store</a></li>
+          <li><a href="/changelog.html" class="hover:text-indigo-400 transition">Changelog</a></li>
+          <li><a href="/rules.html" class="hover:text-indigo-400 transition">Rules</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">Follow Us</h3>
+        <div class="space-x-4 flex">
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-discord"></i></a>
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+
+    <div class="text-center mt-8">
+      <p>&copy; 2024 Seraphis Bot. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

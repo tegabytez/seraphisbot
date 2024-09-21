@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadge</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    .raindrop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background-color: blue;
+      animation: fall 1s infinite;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-800 text-white text-center flex flex-col justify-center items-center h-screen overflow-hidden">
+
+  <h1 class="text-6xl font-bold animate-bounce">😢 Sadge</h1>
+  <p class="text-2xl mt-4">Invite Seraphis before you go...</p>
+  <div class="mt-8">
+    <a href="/" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-800 text-white rounded-full transition">Go to Homepage</a>
+    <a href="/invite/bot.html" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-800 text-white rounded-full transition">Invite Seraphis</a>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundjay.com/button/sad-sound.mp4" type="audio/mp4">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script>
+    function createRaindrops() {
+      for (let i = 0; i < 150; i++) {
+        const raindrop = document.createElement('div');
+        raindrop.classList.add('raindrop');
+        raindrop.style.left = `${Math.random() * 100}vw`;
+        raindrop.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+        document.body.appendChild(raindrop);
+      }
+    }
+
+    createRaindrops();
+  </script>
+</body>
+</html>

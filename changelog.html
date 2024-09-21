@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Seraphis</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <header class="bg-gray-800 text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="/" class="text-2xl font-bold">Seraphis</a>
+            <nav class="space-x-6">
+                <a href="/commands.html">Commands</a>
+                <a href="/team.html">Team</a>
+                <a href="/store.html">Store</a>
+                <a href="/changelog.html">Changelog</a>
+                <a href="/rules.html">Rules</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Changelog Section -->
+    <main class="pt-20 pb-16 container mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-6 text-purple-400 text-center">Changelog</h1>
+        <p class="text-lg text-gray-400 mb-12 text-center">Discover the latest updates and features we’ve rolled out!</p>
+
+        <div id="changelog-container"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Seraphis Bot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Load changelog entries
+        async function loadChangelog() {
+            const container = document.getElementById('changelog-container');
+
+            // List of changelog versions (you can generate this dynamically)
+            const changelogVersions = ['v1.1.1'];
+
+            for (const version of changelogVersions) {
+                // Create a link that redirects to /changelogs/version
+                const link = document.createElement('a');
+                link.href = `/changelogs/${version}.html`;
+                link.className = 'block mb-4';
+
+                const response = await fetch(`cl/${version}.html`);
+                if (!response.ok) {
+                    console.error('Error loading changelog:', response.statusText);
+                    continue;
+                }
+                const text = await response.text();
+                
+                // Create a div for the changelog entry
+                const entry = document.createElement('div');
+                entry.innerHTML = text; // Assuming this HTML contains the title and a brief description
+                link.appendChild(entry);
+
+                // Append the link to the changelog container
+                container.appendChild(link);
+            }
+        }
+
+        loadChangelog();
+    </script>
+
+</body>
+</html>

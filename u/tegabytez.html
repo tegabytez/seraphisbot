@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TegaBytez - Seraphis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+    <style>
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .projects-card {
+        transition:
+          transform 0.3s ease-in-out,
+          box-shadow 0.3s ease-in-out;
+      }
+
+      .projects-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+      body, html {
+        height: 100%;
+        background-color: #f4f4f9;
+        font-family: "Arial", sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body
+    <header class="bg-gray-800 text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="/" class="text-2xl font-bold">Seraphis</a>
+            <nav class="space-x-6">
+                <a href="/commands.html">Commands</a>
+                <a href="/team.html">Team</a>
+                <a href="/store.html">Store</a>
+                <a href="/changelog.html">Changelog</a>
+                <a href="/rules.html">Rules</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Container -->
+    <div
+      class="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-10"
+    >
+      <!-- Profile Section -->
+      <div class="text-center">
+        <img
+          src="https://cdn.discordapp.com/avatars/1281575904564477964/e30e5d7518933efb86cd54b40951eb39.png?size=2048"
+          alt="Profile Picture"
+          class="profile-pic shadow-lg mb-4 mx-auto"
+        />
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">TegaBytez</h1>
+        <h4 class="text-2xl font-bold text-gray-800 mb-2">
+          Discord Bot Developer
+        </h4>
+        <p class="text-lg text-gray-600 max-w-md mx-auto mb-6">
+          Hey there! I'm TegaBytez, a Discord bot developer with a passion for
+          creating engaging and interactive bots for Discord users.
+        </p>
+        <div class="flex space-x-4 justify-center">
+          <a href="https://twitter.com" class="hover:text-indigo-500 transition"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="https://github.com" class="hover:text-indigo-500 transition"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a
+            href="https://linkedin.com"
+            class="hover:text-indigo-500 transition"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="container mt-12">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">
+          Highlighted Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="projects-card bg-white rounded-lg p-6 shadow-lg hover:bg-indigo-50 transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Seraphis Discord Bot
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A easy way to manage your server with ease using buttons, modals, slash-commands, and more.
+            </p>
+            <a href="https://seraphis.xyz" class="text-indigo-500 hover:underline">View Product</a>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="projects-card bg-white rounded-lg p-6 shadow-lg hover:bg-indigo-50 transition"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Personal Website
+            </h3>
+            <p class="text-gray-600 mb-4">
+              A sleek and responsive personal portfolio to showcase my projects
+              and skills. (Which is unfinished and not ready for show..)
+            </p>
+            <a href="#" class="text-indigo-500 hover:underline">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- About Section -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4 text-purple-400">About Seraphis</h3>
+          <p class="text-sm">
+            Seraphis Bot makes server management effortless with buttons, modals, and slash commands. Enjoy seamless moderation and utility features that save time.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4 text-purple-400">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="/commands.html" class="hover:text-indigo-400 transition">Commands</a></li>
+            <li><a href="/team.html" class="hover:text-indigo-400 transition">Team</a></li>
+            <li><a href="/store.html" class="hover:text-indigo-400 transition">Store</a></li>
+            <li><a href="/changelog.html" class="hover:text-indigo-400 transition">Changelog</a></li>
+            <li><a href="/rules.html" class="hover:text-indigo-400 transition">Rules</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4 text-purple-400">Follow Us</h3>
+          <div class="space-x-4 flex">
+            <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-discord"></i></a>
+            <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+
+      <div class="text-center mt-8">
+        <p>&copy; 2024 Seraphis Bot. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

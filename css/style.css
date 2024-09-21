@@ -1,0 +1,183 @@
+/* General styles for body and headings */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom primary color (can match Tailwind config) */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+}
+
+/* Custom animation for a hero section title */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pulse {
+  animation: pulseAnimation 3s ease-in-out infinite;
+}
+
+/* Button hover effects */
+button:hover,
+a:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Styling for cards (such as team member cards, command cards, etc.) */
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Commands tab styling */
+.tab-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tab-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Modal or modal-like popups */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+/* Smooth scrolling for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional utility classes for margins and padding */
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* /team */
+body, html {
+  height: 100%;
+  font-family: system-ui;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.team-card:hover {
+  background-color: #3b3f4c;
+  transform: scale(1.05);
+}
+
+.team-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+.team-card .fa-code,
+.team-card .fa-palette,
+.team-card .fa-users {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.team-card:hover .fa-code,
+.team-card:hover .fa-palette,
+.team-card:hover .fa-users {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  background-color: #1a1c22; /* Similar to Dyno.gg */
+}
+
+h2 {
+  color: #a78bfa; /* Purple color for headings */
+}
+
+p {
+  color: #9ca3af; /* Text color */
+}
+
+footer {
+  background-color: #111; /* Dark footer */
+  color: white;
+}

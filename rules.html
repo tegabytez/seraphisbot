@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seraphis Rules</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Custom styling to make the footer sticky */
+    body, html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 text-white shadow-lg fixed w-full z-50">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+          <a href="/" class="text-2xl font-bold">Seraphis</a>
+          <nav class="space-x-6">
+              <a href="/commands.html">Commands</a>
+              <a href="/team.html">Team</a>
+              <a href="/store.html">Store</a>
+              <a href="/changelog.html">Changelog</a>
+              <a href="/rules.html">Rules</a>
+          </nav>
+      </div>
+  </header>
+
+  <!-- Main content section (acts as flex-grow to push the footer down) -->
+  <main class="container mx-auto py-16">
+    <section class="py-16 bg-gray-900">
+      <h2 class="text-4xl font-bold mb-8">Rules</h2>
+      <ul class="list-disc pl-5 space-y-4 text-lg text-gray-600">
+        <li>Respect all members.</li>
+        <li>No spamming or flooding the chat.</li>
+        <li>Follow the Discord Community Guidelines.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer (Sticky Footer) -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- About Section -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">About Seraphis</h3>
+        <p class="text-sm">
+          Seraphis Bot makes server management effortless with buttons, modals, and slash commands. Enjoy seamless moderation and utility features that save time.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="/commands.html" class="hover:text-indigo-400 transition">Commands</a></li>
+          <li><a href="/team.html" class="hover:text-indigo-400 transition">Team</a></li>
+          <li><a href="/store.html" class="hover:text-indigo-400 transition">Store</a></li>
+          <li><a href="/changelog.html" class="hover:text-indigo-400 transition">Changelog</a></li>
+          <li><a href="/rules.html" class="hover:text-indigo-400 transition">Rules</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4 text-purple-400">Follow Us</h3>
+        <div class="space-x-4 flex">
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-discord"></i></a>
+          <a href="#" class="hover:text-purple-400 transition"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter Signup -->
+
+    <div class="text-center mt-8">
+      <p>&copy; 2024 Seraphis Bot. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle script
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

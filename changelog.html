@@ -14,11 +14,11 @@
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
             <a href="/" class="text-2xl font-bold">Seraphis</a>
             <nav class="space-x-6">
-                <a href="/commands.html">Commands</a>
-                <a href="/team.html">Team</a>
-                <a href="/store.html">Store</a>
-                <a href="/changelog.html">Changelog</a>
-                <a href="/rules.html">Rules</a>
+                <a href="/commands">Commands</a>
+                <a href="/team">Team</a>
+                <a href="/store">Store</a>
+                <a href="/changelog">Changelog</a>
+                <a href="/rules">Rules</a>
             </nav>
         </div>
     </header>
@@ -49,7 +49,7 @@
             for (const version of changelogVersions) {
                 // Create a link that redirects to /changelogs/version
                 const link = document.createElement('a');
-                link.href = `/changelogs/${version}.html`;
+                link.href = `/changelogs/${version}`;
                 link.className = 'block mb-4';
 
                 const response = await fetch(`cl/${version}.html`);

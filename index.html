@@ -46,11 +46,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
       </div>
       <nav class="space-x-6">
-        <a href="/commands.html" class="hover:text-purple-400 transition">Commands</a>
-        <a href="/team.html" class="hover:text-purple-400 transition">Team</a>
-        <a href="/store.html" class="hover:text-purple-400 transition">Store</a>
-        <a href="/changelog.html" class="hover:text-purple-400 transition">Changelog</a>
-        <a href="/rules.html" class="hover:text-purple-400 transition">Rules</a>
+        <a href="/commands" class="hover:text-purple-400 transition">Commands</a>
+        <a href="/team" class="hover:text-purple-400 transition">Team</a>
+        <a href="/store" class="hover:text-purple-400 transition">Store</a>
+        <a href="/changelog" class="hover:text-purple-400 transition">Changelog</a>
+        <a href="/rules" class="hover:text-purple-400 transition">Rules</a>
       </nav>
       <div class="space-x-4">
         <a href="./invite/bot" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">Invite Seraphis</a>
@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="text-6xl font-bold animate-pulse">Seraphis Bot</h1>
     <p class="text-2xl mt-4">Manage your server with ease using buttons, modals, and slash-commands.</p>
     <div class="mt-8">
-      <a href="/commands.html" class="px-6 py-3 bg-primary hover:bg-indigo-700 text-white rounded-full transition">View Commands</a>
+      <a href="/commands" class="px-6 py-3 bg-primary hover:bg-indigo-700 text-white rounded-full transition">View Commands</a>
         <a id="invite-btn" href="#" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition">Invite Seraphis</a>
         <!-- Script To Show Da Thanks For Inviting THing -->
         <script>
@@ -73,7 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const clientId = "1285047986170236999";
             const permissions = "1117161270422";
             const scope = "bot+applications.commands";
-            const redirectUri = encodeURIComponent("https://seraphis.xyz/thanks.html?invited=true");
+            const redirectUri = encodeURIComponent("https://seraphis.xyz/thanks?invited=true");
 
             // Construct the invite URL
             const inviteUrl = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}&redirect_uri=${redirectUri}`;
@@ -87,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('invited') === 'true') {
               // Redirect to the thanks.html page
-              window.location.href = "/thanks.html?invited=true";
+              window.location.href = "/thanks?invited=true";
             }
           }
 
@@ -141,11 +141,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <h3 class="font-semibold text-lg mb-4 text-purple-400">Quick Links</h3>
           <ul class="space-y-2">
-            <li><a href="/commands.html" class="hover:text-indigo-400 transition">Commands</a></li>
-            <li><a href="/team.html" class="hover:text-indigo-400 transition">Team</a></li>
-            <li><a href="/store.html" class="hover:text-indigo-400 transition">Store</a></li>
-            <li><a href="/changelog.html" class="hover:text-indigo-400 transition">Changelog</a></li>
-            <li><a href="/rules.html" class="hover:text-indigo-400 transition">Rules</a></li>
+            <li><a href="/commands" class="hover:text-indigo-400 transition">Commands</a></li>
+            <li><a href="/team" class="hover:text-indigo-400 transition">Team</a></li>
+            <li><a href="/store" class="hover:text-indigo-400 transition">Store</a></li>
+            <li><a href="/changelog" class="hover:text-indigo-400 transition">Changelog</a></li>
+            <li><a href="/rules" class="hover:text-indigo-400 transition">Rules</a></li>
           </ul>
         </div>
 

@@ -1,4 +1,7 @@
-# Hey There! 👋
-I'm [TegaBytez](https://seraphis.xyz/u/tegabytez), a solo Discord bot developer & a learning website builder
-Most of this website was not created by me, I actually don't know who it was someone just DMed me.. Now I maintain it. But besides that this is the official website for my discord bot, **[Seraphis](https://seraphis.xyz)**
-Leaving it open source because I'm lazy and wouldn't feel like doing anything else to be honest.
+# Discontinued, Moved
+Hey! Tega here, I would liek to say that Seraphis is completely being discontinued and will no longer be worked on. We are moving on to another project [RPS Royale](https://discord.gg/gBHeMPYUSH) *(Click the name for more info)*
+### If The Domain Is Still Up
+You can visit https://seraphis.xyz/ for info on RPSR
+https://seraphis.xyz/u/tegabytez for info on me
+
+Toodaloos
